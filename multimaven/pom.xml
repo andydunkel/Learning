@@ -11,6 +11,7 @@
     <modules>
         <module>Communication</module>
         <module>Application</module>
+        <module>server</module>
     </modules>
 
     <properties>
