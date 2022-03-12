@@ -8,15 +8,13 @@ public class Main {
     public static void main(String[] args) {
         var comms = new Comms();
         try {
-            var facts = comms.getCatFacts();
-            System.out.println(facts);
+            var fact = comms.getCatFacts();
+            System.out.println(fact);
 
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (KeyManagementException e) {
             e.printStackTrace();
         }
-
-
     }
 }

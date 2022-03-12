@@ -41,13 +41,13 @@ public class Comms {
         var client = ClientBuilder.newBuilder().sslContext(sslContext).build();
         return client;
     }
-    public String getCatFacts() throws NoSuchAlgorithmException, KeyManagementException {
+    public CatFact getCatFacts() throws NoSuchAlgorithmException, KeyManagementException {
         var url = "https://catfact.ninja/fact";
 
         var client = createClient();
         var resp = client.target(url).request().get();
         resp.bufferEntity();
-        var result = resp.readEntity(String.class);
+        var result = resp.readEntity(CatFact.class);
         return result;
     }
 }
