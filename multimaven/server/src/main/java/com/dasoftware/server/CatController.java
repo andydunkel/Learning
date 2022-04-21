@@ -16,6 +16,8 @@ public class CatController {
     @GetMapping
     public CatFact getStudent() {
         var comm = new Comms();
+
+
         try {
             var fact = comm.getCatFacts();
             return fact;
