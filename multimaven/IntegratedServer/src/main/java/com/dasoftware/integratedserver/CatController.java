@@ -1,7 +1,7 @@
-package com.dasoftware.server;
+package com.dasoftware.integratedserver;
 
-import com.dasoftware.communication.CatFact;
-import com.dasoftware.communication.Comms;
+import com.dasoftware.integratedserver.comms.CatFact;
+import com.dasoftware.integratedserver.comms.Comms;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,8 +16,6 @@ public class CatController {
     @GetMapping
     public CatFact getStudent() {
         var comm = new Comms();
-
-
         try {
             var fact = comm.getCatFacts();
             return fact;

@@ -6,19 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="server" />
-        <module name="IntegratedServer" />
-        <module name="Server" />
-        <module name="Application" />
-        <module name="Communication" />
+        <module name="MySQLExample" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="IntegratedServer" options="-parameters" />
-      <module name="Server" options="-parameters" />
-      <module name="server" options="-parameters" />
-    </option>
   </component>
 </project>
